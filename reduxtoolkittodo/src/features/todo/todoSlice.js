@@ -40,7 +40,10 @@ export const todoSlice = createSlice({ // yaha slice create kr lia (method hai e
 
 //actually mein aapko iske 2 part export krne hai
 //mtlb ab jo functionalities hai (addtodo / removetodo) kyuki isi ke thorugh ham state update krenge toh ye functionality individually kam mein aaegi
-export const {addTodo ,removeTodo } = todoSlice.actions //ye wala export components mein kam aaenge
+export const {addTodo ,removeTodo } = todoSlice.actions //ye wala export components mein kam aaenge //.actions mtlb wahi addTodo RemoveTodo
 
 //ab store ko bhi toh pata hona chahie ki kaun kaun se reducer hai toh ye wala export store ke lie
 export default todoSlice.reducer
+
+//ab ham yaha pr .reducer export kr rhe but upar reducers banaye hai .. ye ham kar pa rhe kyuki RTK kya karta hai ki hamare sare reducers jo hamne
+// likhe hai reducers :{addtodo , removetodo} in sab ko ek function mei wrap kr deta hai named reducer islie ham .reducer export kar pa rahe 
