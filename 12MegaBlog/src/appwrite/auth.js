@@ -1,4 +1,4 @@
-import conf from "../conf/config";
+import conf from "../conf/conf";
 import { Client, Account, ID } from "appwrite";
 
 // no actual need of export here because we are exporting this class as an object so that user doesnt need to create instance of this class
